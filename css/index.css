@@ -1,0 +1,10 @@
+.wrap_img {
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.wrap_img img {
+    max-width: 100%;
+    display: inline-block;
+}
