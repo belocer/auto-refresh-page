@@ -1,0 +1,27 @@
+{
+  "name":"Auto-page-refresh",
+  "description":"Автообновление странцы, через указанный период.",
+  "version":"0.0.1",
+  "permissions": ["storage", "tabs"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "img/icon.png",
+    "default_title": "Автообновление странцы."
+  },
+  "content_scripts":[
+    {
+      "matches": ["<all_urls>"],
+      "js":["js/content.js"],
+      "run_at":"document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "icons": {
+    "16":"img/icon.png",
+    "48":"img/icon.png",
+    "128":"img/icon.png"
+  },
+  "manifest_version":2
+}
